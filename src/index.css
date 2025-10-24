@@ -1,0 +1,42 @@
+/* ✅ 1. Google Fonts FIRST */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Lato:wght@400;600;700&display=swap");
+
+/* ✅ 2. Tailwind import SECOND */
+@import "tailwindcss";
+
+/* ✅ 3. Your custom CSS rules come after */
+@media (max-width: 1440px) {
+  #home {
+    background-size: cover !important;
+    background-position: center top !important;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.25s ease-out;
+}
+/* Hide scrollbars globally but keep scrolling */
+/* Hide scrollbars globally but allow smooth scrolling */
+html, body {
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
