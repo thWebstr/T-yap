@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "../components/Layout/Navbar";
-import Footer from "../components/Layout/Footer";
+import Navbar from "../components/Lamb/Navbar";
+import Footer from "../components/Lamb/Footer";
 import { BsArrowLeft } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
