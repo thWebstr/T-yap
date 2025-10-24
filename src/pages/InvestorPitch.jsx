@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Layout/NavBar";
+import NavBar from "../components/Layout/NavBar";
 import Footer from "../components/Layout/Footer";
 import { BsArrowLeft } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
@@ -15,7 +15,7 @@ const InvestorPitch = () => {
 
       {/* ✅ Navbar */}
       <div className="relative z-100">
-        <Navbar transparent={false} />
+        <NavBar transparent={false} />
       </div>
 
       {/* 🔙 Back Arrow Button */}
