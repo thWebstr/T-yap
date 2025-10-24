@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Layout/Navbar";
+import Navbar from "../components/Layout/NavBar";
 import Footer from "../components/Layout/Footer";
 import { BsArrowLeft } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
