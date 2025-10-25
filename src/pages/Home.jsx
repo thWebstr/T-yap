@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/home/Hero";
 import HowItWorks from "../components/home/HowItWorks";
 import AboutUsSnippet from "../components/home/AboutUsSnippet";
-import FeaturesSnippet from "../components/home/featuressnippet";
+import FeaturesSnippet from "../components/home/FeaturesSnippet";
 import OurImpact from "../components/home/OurImpact";
 import InvestSection from "../components/home/InvestSection";
 import WhoWeServe from "../components/home/WhoWeServe";
