@@ -92,8 +92,24 @@ const Footer = () => {
           <div>
             <h4 className="font-sora font-semibold text-[16px] mb-4">Social</h4>
             <div className="flex space-x-4 text-[22px]">
-              <FaInstagram />
-              <FaXTwitter />
+              <a
+                href="https://www.instagram.com/t_yap__ng?igsh=c3hla2xsdTN3aGtw"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-orange-400 transition-colors"
+              >
+                <FaInstagram />
+              </a>
+
+              <a
+                href="https://x.com/t_yap__ng?s=21"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-orange-400 transition-colors"
+              >
+                <FaXTwitter />
+              </a>
+
               <FaGlobe />
             </div>
           </div>
