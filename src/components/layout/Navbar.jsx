@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link as ScrollLink } from "react-scroll";
 import { useLocation, useNavigate } from "react-router-dom";
-import Button from "../ui/button";
+import Button from "../ui/Button";
 import TyapLogo from "../../assets/Tyaplogo.png";
 
 const Navbar = () => {
