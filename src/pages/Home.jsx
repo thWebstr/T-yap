@@ -6,7 +6,7 @@ import FeaturesSnippet from "../components/home/FeaturesSnippet";
 import OurImpact from "../components/home/OurImpact";
 import InvestSection from "../components/home/InvestSection";
 import WhoWeServe from "../components/home/WhoWeServe";
-import FounderNote from "../components/home/foundernote";
+import FounderNote from "../components/home/FounderNote";
 import Testimonials from "../components/home/Testimonials";
 import FAQSection from "../components/home/FAQSection";
 import Footer from "../components/layout/Footer";
