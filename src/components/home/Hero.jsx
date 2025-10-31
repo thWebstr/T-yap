@@ -4,6 +4,13 @@ import Button from "../ui/Button";
 import heroBg from "../../assets/herobg.png";
 
 const Hero = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.querySelector(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="home"
@@ -32,8 +39,17 @@ const Hero = () => {
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-          <Button label="Get Started" variant="primary" />
-          <Button label="Partner With Us" variant="outline" />
+          {/* ✅ Smooth scroll actions */}
+          <Button
+            label="Get Started"
+            variant="primary"
+            onClick={() => scrollToSection("#who-we-serve")}
+          />
+          <Button
+            label="Partner With Us"
+            variant="outline"
+            onClick={() => scrollToSection("#invest")}
+          />
         </div>
       </div>
     </section>
