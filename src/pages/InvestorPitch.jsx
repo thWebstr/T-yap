@@ -48,7 +48,7 @@ const InvestorPitch = () => {
               eliminating the need for cash, cards, or smartphones.
             </p>
             <p className="text-[18px]">
-              We’re solving one of Africa’s most overlooked problems — the
+              We’re solving one of Africa’s most overlooked problems, the
               chaos, fraud, and inefficiency in cash-based transport systems.
             </p>
           </div>
@@ -81,7 +81,7 @@ const InvestorPitch = () => {
                 Real-time settlements to drivers, parks, and operators.
               </li>
               <li>
-                Fintech expansion — offering wallets, bill payments, and
+                Fintech expansion offering wallets, bill payments, and
                 transfers within the same ecosystem.
               </li>
             </ul>
@@ -92,7 +92,7 @@ const InvestorPitch = () => {
             <h2 className="text-[24px] font-semibold mb-3">Our Edge</h2>
             <ul className="list-disc list-inside text-[18px] space-y-1">
               <li>
-                No smartphone required — passengers only need their
+                No smartphone required passengers only need their
                 fingerprints.
               </li>
               <li>
@@ -114,7 +114,7 @@ const InvestorPitch = () => {
             <h2 className="text-[24px] font-semibold mb-3">Our Mission</h2>
             <p className="text-[18px]">
               To make transport payments in Africa secure, inclusive, and fully
-              digital — turning every bus park into a gateway for financial
+              digital turning every bus park into a gateway for financial
               inclusion.
             </p>
           </div>
@@ -150,7 +150,7 @@ const InvestorPitch = () => {
               Join the Movement
             </h2>
             <p className="text-[18px] mb-4">
-              T-Yap is not just building a payment system — we’re redefining how
+              T-Yap is not just building a payment system we’re redefining how
               millions move, pay, and connect in Africa’s public transport
               network.
             </p>

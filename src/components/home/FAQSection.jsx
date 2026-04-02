@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "How do I register?",
     answer:
-      "Registration is simple — you can sign up at participating transport parks or through the T-yap agent network using your fingerprint. No smartphone required.",
+      "Registration is simple you can sign up at participating transport parks or through the T-yap agent network using your fingerprint. No smartphone required.",
   },
   {
     question: "Can drivers and park managers use T-yap too?",
@@ -25,7 +25,7 @@ const faqs = [
   {
     question: "Do I need a bank account to use T-yap?",
     answer:
-      "No. T-yap enables the unbanked to participate — you only need your fingerprint. Funds can be topped up and withdrawn easily through partner agents.",
+      "No. T-yap enables the unbanked to participate, you only need your fingerprint. Funds can be topped up and withdrawn easily through partner agents.",
   },
 ];
 

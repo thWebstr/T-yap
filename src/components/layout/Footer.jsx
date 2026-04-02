@@ -70,7 +70,7 @@ const Footer = () => {
             <h3 className="text-[28px] font-sora font-semibold">T-Yap</h3>
           </div>
           <p className="text-[16px] font-sora leading-[23px]">
-            Nigeria’s first biometric payment system for public transport — safe,
+            Nigeria’s first biometric payment system for public transport safe,
             fast, and inclusive.
           </p>
         </div>

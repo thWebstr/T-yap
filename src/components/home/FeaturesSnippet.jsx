@@ -15,20 +15,20 @@ const FeaturesSnippet = () => {
       </h2>
 
       {/* Feature content */}
-      <div className="w-full md:w-[880px] text-center">
+     <div className="w-full text-center">
         <h3 className="font-sora text-[20px] md:text-[22px] font-semibold text-center text-[rgba(0, 0, 0, 1)] mb-4">
-          1. Biometric Transport Payment System  
-
+          1. Biometric Transport Payment System
         </h3>
-        <ul className="text-black font-sora text-[18px] space-y-2 list-disc list-inside ">
+
+        <ul className="text-black font-sora text-[18px] space-y-2 list-disc list-inside inline-block text-left">
           <li>
-            Pay instantly using your fingerprint — no cash,<br /> no cards, no phones needed.
+            Pay instantly using your fingerprint no cash, no cards, no phones needed.
           </li>
           <li>
-            Works on all registered buses, terminals, and<br /> transport kiosks.
+            Works on all registered buses, terminals, and transport kiosks.
           </li>
           <li>
-            Ensures security, eliminates fare disputes, and<br /> promotes transparency.
+            Ensures security, eliminates fare disputes, and promotes transparency.
           </li>
         </ul>
       </div>

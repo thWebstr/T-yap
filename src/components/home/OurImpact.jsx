@@ -1,22 +1,30 @@
 import React from "react";
+import Security from "../../assets/security.png";
+import Speed from "../../assets/speed.png";
+import Transparency from "../../assets/transparency.png";
+import Inclusion from "../../assets/inclusion.png";
 
 const OurImpact = () => {
   const impacts = [
     {
       title: "Security",
       text: "Cashless transactions reduce theft, robbery, and revenue leakage.",
+      image: Security,
     },
     {
       title: "Speed",
-      text: "Faster boarding and seamless rides — no more long queues or cash delays.",
+      text: "Faster boarding and seamless rides no more long queues or cash delays.",
+      image: Speed,
     },
     {
       title: "Transparency",
       text: "Every trip, fare, and payment tracked in real time for passengers and operators.",
+      image: Transparency,
     },
     {
       title: "Inclusion",
       text: "Unbanked and underbanked travelers gain access to digital payments and services.",
+      image: Inclusion,
     },
   ];
 
@@ -25,15 +33,11 @@ const OurImpact = () => {
       id="impact"
       className="relative w-full flex flex-col items-center justify-center py-24 px-6 md:px-20 overflow-hidden bg-white"
     >
-      {/* 🔶 Background Ellipses */}
-      <div
-        className="absolute w-[600px] h-[600px] rounded-full blur-[300px] bg-[rgba(255,76,0,0.25)] top-[100px] left-[-200px] z-0"
-      ></div>
-      <div
-        className="absolute w-[600px] h-[600px] rounded-full blur-[300px] bg-[rgba(255,138,0,0.25)] bottom-[-100px] right-[-250px] z-0"
-      ></div>
+      {/* 🔶 Background Blurs */}
+      <div className="absolute w-[600px] h-[600px] rounded-full blur-[300px] bg-[rgba(255,76,0,0.25)] top-[100px] left-[-200px] z-0"></div>
+      <div className="absolute w-[600px] h-[600px] rounded-full blur-[300px] bg-[rgba(255,138,0,0.25)] bottom-[-100px] right-[-250px] z-0"></div>
 
-      {/* Section Heading */}
+      {/* Heading */}
       <h2 className="font-sora text-[32px] font-semibold text-center text-black mb-6 relative z-10">
         Our Impact
       </h2>
@@ -43,27 +47,39 @@ const OurImpact = () => {
         Transforming Public Transport for Everyone
         <br />
         <span className="text-[18px] font-normal">
-          T-Yap isn’t just about payments — it’s about creating a smarter,
+          T-Yap isn’t just about payments it’s about creating a smarter,
           safer, and more inclusive transportation system.
         </span>
       </p>
 
-      {/* Impact Boxes */}
+      {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
-        {impacts.map((item, index) => (
-          <div
-            key={index}
-            className="w-[310px] h-[264px] border border-transparent rounded-[20px] p-6 flex flex-col bg-transparent/80 backdrop-blur-sm shadow-sm hover:shadow-lg transition-all duration-300"
-          >
-            <h3 className="font-sora font-semibold text-[24px] leading-none mb-4">
-              {item.title}
-            </h3>
-            <p className="font-sora text-[18px] leading-tight text-black">
-              {item.text}
-            </p>
-          </div>
-        ))}
+      {impacts.map((item, index) => (
+    <div
+      key={index}
+      className="w-[300px] min-h-[320px] rounded-2xl p-6 flex flex-col items-center text-center bg-[#fff7f0] shadow-sm hover:shadow-lg transition-all duration-300"
+    >
+      {/* Image */}
+      <div className="mb-5">
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-[80px] h-[80px] object-contain"
+        />
       </div>
+
+      {/* Title */}
+      <h3 className="font-sora font-semibold text-[22px] mb-3">
+        {item.title}
+      </h3>
+
+      {/* Text */}
+      <p className="font-sora text-[16px] text-gray-700 leading-relaxed">
+        {item.text}
+      </p>
+    </div>
+  ))}
+</div>
     </section>
   );
 };

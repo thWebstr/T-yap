@@ -16,17 +16,17 @@ const FounderNote = () => {
       {/* Main message */}
       <p className="text-[18px] md:text-[20px] font-normal leading-relaxed text-gray-800 max-w-4xl mx-auto mb-10">
         Our mission is to make mobility smarter by enabling biometric payments that are fast, secure, 
-        and accessible to everyone — even those without smartphones or bank accounts. With T-Yap, 
+        and accessible to everyone even those without smartphones or bank accounts. With T-Yap, 
         a single fingerprint connects passengers, drivers, and park managers to a seamless, cashless 
         system designed for the realities of Africa.
         <br /><br />
-        This is more than technology — it’s a movement to modernize transport, build trust, 
+        This is more than technology it’s a movement to modernize transport, build trust, 
         and empower communities across Nigeria and beyond.
       </p>
 
       {/* Signature */}
       <p className="text-[20px] font-semibold mt-8">
-        — Muhammad Oladele Sekoni <br />
+         Muhammad Oladele Sekoni <br />
         <span className="font-medium text-gray-700">Founder & CEO, T-Yap NG</span>
       </p>
     </section>

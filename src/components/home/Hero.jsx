@@ -35,7 +35,7 @@ const Hero = () => {
 
         <p className="mt-6 font-sora font-semibold text-white text-[16px] sm:text-[20px] md:text-[24px] leading-[26px] sm:leading-[32px] md:leading-[40px] max-w-[800px]">
           Nigeria’s first biometric payment system for public transport. Safe,
-          fast, and convenient — powered by fintech and insurance features.
+          fast, and convenient powered by fintech and insurance features.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">

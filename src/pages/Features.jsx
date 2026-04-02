@@ -45,7 +45,7 @@ const Features = () => {
               </h2>
               <ul className="list-disc list-inside space-y-2 font-sora text-[16px] md:text-[18px] leading-relaxed">
                 <li>
-                  Pay instantly using your fingerprint — no cash, no cards, no phones needed.
+                  Pay instantly using your fingerprint no cash, no cards, no phones needed.
                 </li>
                 <li>Works on all registered buses, terminals, and transport kiosks.</li>
                 <li>Ensures security, eliminates fare disputes, and promotes transparency.</li>
@@ -99,7 +99,7 @@ const Features = () => {
               </h2>
               <ul className="list-disc list-inside space-y-2 font-sora text-[16px] md:text-[18px] leading-relaxed">
                 <li>Real-time trip and payment tracking.</li>
-                <li>Dynamic park and route fees — can be updated anytime by park management.</li>
+                <li>Dynamic park and route fees can be updated anytime by park management.</li>
                 <li>Instant wallet settlements for drivers and park operators.</li>
                 <li>Automated record of daily revenue and remittance reports.</li>
               </ul>
@@ -146,7 +146,7 @@ const Features = () => {
               Our Vision
             </h2>
             <p className="font-sora text-[16px] md:text-[18px] max-w-3xl mx-auto leading-[28px]">
-              A continent where everyone — banked or unbanked — can move, pay, and earn securely
+              A continent where everyone, banked or unbanked, can move, pay, and earn securely
               with just a touch.
             </p>
           </section>

@@ -83,7 +83,7 @@ const About = () => {
             trip is transparent, and every user is financially included.
             <br />
             <br />
-            We are not just building an app — we are building Africa’s most
+            We are not just building an app, we are building Africa’s most
             trusted transport-fintech ecosystem, where technology meets
             convenience and inclusion.
           </p>
@@ -93,7 +93,7 @@ const About = () => {
         <div className="text-center">
           <h2 className="text-4xl font-semibold mb-10">Our Story</h2>
           <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-sora max-w-3xl mx-auto">
-            T-Yap NG was born from a simple observation — millions of Nigerians
+            T-Yap NG was born from a simple observation millions of Nigerians
             rely on public transportation every day, yet the system remains
             largely cash based, unsafe, and unstructured.
             <br />
@@ -108,10 +108,10 @@ const About = () => {
             inclusion.
             <br />
             <br />
-            We started with one vision — to make every payment in public
+            We started with one vision to make every payment in public
             transport instant, traceable, and identity-driven. With this, we
             designed a system where a simple fingerprint could pay your fare,
-            check your balance, or top up your wallet — even without a
+            check your balance, or top up your wallet even without a
             smartphone or bank account.
             <br />
             <br />
@@ -119,7 +119,7 @@ const About = () => {
             for secure transport payments and digital finance, starting from the
             parks and garages of Lagos. Through partnerships with park
             managements, unions, and financial institutions, we’re building a
-            network where technology empowers everyone — from the passenger to
+            network where technology empowers everyone from the passenger to
             the driver, from merchants to kiosk agents to the transport operator.
             <br />
             <br />
@@ -135,7 +135,7 @@ const About = () => {
           <ul className="text-left max-w-3xl mx-auto space-y-6 text-lg leading-relaxed text-gray-800 font-sora">
             <li>
               <strong>1. Inclusion:</strong> We believe everyone deserves access
-              to financial and transport innovation — with or without a
+              to financial and transport innovation, with or without a
               smartphone or bank account.
             </li>
             <li>
@@ -150,7 +150,7 @@ const About = () => {
             </li>
             <li>
               <strong>4. Convenience:</strong> We simplify complex systems,
-              allowing users to move and pay seamlessly — anytime, anywhere.
+              allowing users to move and pay seamlessly anytime, anywhere.
             </li>
             <li>
               <strong>5. Partnership:</strong> We grow by collaborating with

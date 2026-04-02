@@ -23,7 +23,7 @@ const steps = [
     id: 3,
     title: "Tap to Pay",
     description:
-      "Simply board a bus, shuttle, or keke and tap your fingerprint. The fare is deducted instantly — no cash, no hassle.",
+      "Simply board a bus, shuttle, or keke and tap your fingerprint. The fare is deducted instantly no cash, no hassle.",
     icon: <TbBus size={32} color="rgba(153, 0, 0, 1)" />,
   },
   {
