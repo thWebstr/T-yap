@@ -7,30 +7,30 @@ import { TbBus } from "react-icons/tb";
 const steps = [
   {
     id: 1,
-    title: "Register with Fingerprint",
+    title: "Sign Up & Enroll",
     description:
-      "Sign up via the mobile app or at a T-yap kiosk. Your fingerprint becomes your secure key for all payments and travel.",
+      "Passengers create an account through the T-Yap app or at a park with an agent. Their fingerprint is securely captured and linked to their wallet (no images stored, only encrypted templates).",
     icon: <IoFingerPrintSharp size={24} />,
   },
   {
     id: 2,
-    title: "Load Your Wallet",
+    title: "Fund Your Wallet",
     description:
-      "Fund your wallet easily through bank transfer, USSD, agent kiosks, or partner merchants.",
+      "Users can add money easily via bank transfer, the T-Yap mobile app, or cash through an authorized agent kiosk.",
     icon: <HiWallet size={24} />,
   },
   {
     id: 3,
-    title: "Tap to Pay",
+    title: "Pay with Your Fingerprint",
     description:
-      "Board a bus or keke and tap your fingerprint. No cash, no stress.",
+      "At the park or inside the vehicle, simply place your finger on the device. The system verifies identity instantly and deducts the fare.",
     icon: <TbBus size={24} />,
   },
   {
     id: 4,
-    title: "Track Activity",
+    title: "Instant Settlement",
     description:
-      "Monitor trips, wallet balance, and receipts in real time.",
+      "Drivers receive payments digitally, park management earns commissions automatically, and all transactions are recorded in real time.",
     icon: <BiSolidBarChartAlt2 size={24} />,
   },
 ];
@@ -63,7 +63,7 @@ const HowItWorks = () => {
       </div>
 
       {/* Header */}
-      <div className="relative z-10 flex flex-col items-center mb-24 max-w-4xl">
+      <div className="relative z-10 flex flex-col items-center mb-24 max-w-4xl text-center">
         
         <h2
           className="font-dm font-black text-center animate-[fadeSlideUp_0.8s_ease-out_0.2s_forwards] opacity-0"
@@ -74,23 +74,45 @@ const HowItWorks = () => {
             letterSpacing: "-0.04em",
           }}
         >
-          How It{" "}
-          <span style={{ position: "relative", display: "inline-block", color: "#FF4C00" }}>
-            Works.
-            <svg
-              className="absolute -bottom-2 md:-bottom-4 left-0 w-full h-[18px] md:h-[26px]"
-              viewBox="0 0 100 20"
-              preserveAspectRatio="none"
-              style={{ overflow: "visible" }}
+          How{" "}
+          <span className="relative inline-block px-2">
+            <span 
+              style={{
+                color: "#FF4C00",
+                position: "relative",
+                display: "inline-block"
+              }}
             >
-              <path
-                d="M 2 8 Q 50 26 98 8 Q 50 14 2 8 Z"
-                fill="#FF4C00"
-                style={{ filter: "drop-shadow(0 2px 4px rgba(255,76,0,0.3))" }}
-              />
-            </svg>
+              T-Yap
+              <svg
+                className="absolute -bottom-2 md:-bottom-4 left-0 w-full h-[18px] md:h-[26px]"
+                viewBox="0 0 100 20"
+                preserveAspectRatio="none"
+                style={{ overflow: "visible" }}
+              >
+                <path
+                  d="M 2 8 Q 50 26 98 8 Q 50 14 2 8 Z"
+                  fill="#FF4C00"
+                  style={{ filter: "drop-shadow(0 2px 4px rgba(255,76,0,0.3))" }}
+                />
+              </svg>
+            </span>
           </span>
+          <br />
+          Works.
         </h2>
+
+        <p
+          className="font-lato mt-10 animate-[fadeSlideUp_0.8s_ease-out_0.4s_forwards] opacity-0"
+          style={{
+            fontSize: "clamp(17px, 1.6vw, 20px)",
+            color: "rgba(0,0,0,0.65)",
+            lineHeight: "1.7",
+            maxWidth: "680px"
+          }}
+        >
+          T-Yap is a biometric payment system that allows passengers to pay for transport using just their fingerprint. No cash, no cards, no phone required.
+        </p>
       </div>
 
       {/* Steps layout */}
