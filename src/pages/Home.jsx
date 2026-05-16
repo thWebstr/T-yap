@@ -15,14 +15,14 @@ const Home = () => {
   return (
     <div className="overflow-x-hidden">
       <section id="home"><Hero /></section>
+      <section id="who-we-serve"><WhoWeServe /></section>
       <section id="how-it-works"><HowItWorks /></section>
-      <section id="about-us"><AboutUsSnippet /></section>
       <section id="features"><FeaturesSnippet /></section>
-      <OurImpact />
-      <InvestSection />
-      <WhoWeServe />
-      <FounderNote />
-      <Testimonials />
+      <section id="impact"><OurImpact /></section>
+      <section id="testimonials"><Testimonials /></section>
+      <section id="about-us"><AboutUsSnippet /></section>
+      <section id="founder-note"><FounderNote /></section>
+      <section id="invest"><InvestSection /></section>
       <section id="faqs"><FAQSection /></section>
       <section id="contact"><Footer /></section>
     </div>

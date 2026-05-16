@@ -3,7 +3,7 @@ import congratsImg from "../assets/congratimg.svg";
 
 const ThankYou = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-white font-sora px-4 py-10">
+    <div className="flex justify-center items-center min-h-screen bg-white font-lato px-4 py-10">
       <div
         className="flex flex-col items-center justify-center text-center p-8 sm:p-10 md:p-12 rounded-[30px] sm:rounded-[40px] md:rounded-[50px] shadow-md"
         style={{

@@ -8,7 +8,7 @@ const About = () => {
   const navigate = useNavigate();
 
   return (
-    <main className="relative bg-white text-black font-sora overflow-hidden">
+    <main className="relative bg-white text-black font-lato overflow-hidden">
       {/* --- Navbar (transparent) --- */}
       <div className="absolute top-0 left-0 w-full z-50">
         <Navbar transparent />
@@ -65,7 +65,7 @@ const About = () => {
         {/* --- About Us --- */}
         <div className="text-center">
           <h1 className="text-5xl font-semibold mb-10">About Us</h1>
-          <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-sora max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-lato max-w-3xl mx-auto">
             T-Yap NG is a next generation biometric payment and transport
             technology company redefining how people move, pay, and earn across
             Africa. We are building a unified ecosystem that connects passengers,
@@ -92,7 +92,7 @@ const About = () => {
         {/* --- Our Story --- */}
         <div className="text-center">
           <h2 className="text-4xl font-semibold mb-10">Our Story</h2>
-          <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-sora max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl leading-relaxed text-gray-800 font-lato max-w-3xl mx-auto">
             T-Yap NG was born from a simple observation millions of Nigerians
             rely on public transportation every day, yet the system remains
             largely cash based, unsafe, and unstructured.
@@ -132,7 +132,7 @@ const About = () => {
         {/* --- Core Values --- */}
         <div className="text-center">
           <h2 className="text-4xl font-semibold mb-10">Our Core Values</h2>
-          <ul className="text-left max-w-3xl mx-auto space-y-6 text-lg leading-relaxed text-gray-800 font-sora">
+          <ul className="text-left max-w-3xl mx-auto space-y-6 text-lg leading-relaxed text-gray-800 font-lato">
             <li>
               <strong>1. Inclusion:</strong> We believe everyone deserves access
               to financial and transport innovation, with or without a

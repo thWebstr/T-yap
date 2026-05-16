@@ -2,7 +2,7 @@ import React from "react";
 
 const FounderNote = () => {
   return (
-    <section className="w-full bg-[radial-gradient(circle_at_top,_#fff6ef_0%,_#ffffff_100%)] py-20 px-6 text-center font-sora text-black">
+    <section className="w-full bg-[radial-gradient(circle_at_top,_#fff6ef_0%,_#ffffff_100%)] py-20 px-6 text-center font-lato text-black">
       {/* Header */}
       <h2 className="text-[40px] font-bold mb-6 leading-[40px]">
         Founder’s Note

@@ -65,7 +65,7 @@ const WaitlistForm = () => {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center py-28 px-6 bg-[radial-gradient(circle_at_top,_#fff6ef_0%,_#ffffff_100%)] min-h-screen font-sora">
+    <section className="relative flex flex-col items-center justify-center py-28 px-6 bg-[radial-gradient(circle_at_top,_#fff6ef_0%,_#ffffff_100%)] min-h-screen font-lato">
       {/* 🔙 Back Button */}
       <button
         onClick={() => navigate(-1)}

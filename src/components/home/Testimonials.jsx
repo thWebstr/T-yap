@@ -32,7 +32,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="w-full py-20 bg-[rgba(252,246,246,1)] text-center font-sora overflow-hidden relative">
+    <section className="w-full py-20 bg-[rgba(252,246,246,1)] text-center font-lato overflow-hidden relative">
       {/* Header */}
       <h2 className="text-[40px] font-bold mb-12 leading-[40px]">
         Testimonials

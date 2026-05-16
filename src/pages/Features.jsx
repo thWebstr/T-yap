@@ -30,7 +30,7 @@ const Features = () => {
           </button>
 
           {/* Header */}
-          <h1 className="font-sora text-[28px] md:text-[40px] font-semibold text-center flex-1">
+          <h1 className="font-dm text-[28px] md:text-[40px] font-semibold text-center flex-1">
             Core Ecosystem Features
           </h1>
         </div>
@@ -40,10 +40,10 @@ const Features = () => {
           <div className="max-w-[900px] w-full space-y-12 text-left">
             {/* Feature 1 */}
             <div>
-              <h2 className="text-[20px] md:text-[22px] font-sora font-semibold text-black mb-3">
+              <h2 className="text-[20px] md:text-[22px] font-dm font-semibold text-black mb-3">
                 1. Biometric Transport Payment System
               </h2>
-              <ul className="list-disc list-inside space-y-2 font-sora text-[16px] md:text-[18px] leading-relaxed">
+              <ul className="list-disc list-inside space-y-2 font-lato text-[16px] md:text-[18px] leading-relaxed">
                 <li>
                   Pay instantly using your fingerprint no cash, no cards, no phones needed.
                 </li>
@@ -54,10 +54,10 @@ const Features = () => {
 
             {/* Feature 2 */}
             <div>
-              <h2 className="text-[20px] md:text-[22px] font-sora font-semibold text-black mb-3">
+              <h2 className="text-[20px] md:text-[22px] font-dm font-semibold text-black mb-3">
                 2. Fintech Infrastructure
               </h2>
-              <ul className="list-disc list-inside space-y-2 font-sora text-[16px] md:text-[18px] leading-relaxed">
+              <ul className="list-disc list-inside space-y-2 font-lato text-[16px] md:text-[18px] leading-relaxed">
                 <li>
                   Each user (driver, passenger, agent, park) has a T-Yap Wallet with a unique
                   account number.
@@ -78,10 +78,10 @@ const Features = () => {
 
             {/* Feature 3 */}
             <div>
-              <h2 className="text-[20px] md:text-[22px] font-sora font-semibold text-black mb-3">
+              <h2 className="text-[20px] md:text-[22px] font-dm font-semibold text-black mb-3">
                 3. Kiosk & Agent Network
               </h2>
-              <ul className="list-disc list-inside space-y-2 font-sora text-[16px] md:text-[18px] leading-relaxed">
+              <ul className="list-disc list-inside space-y-2 font-lato text-[16px] md:text-[18px] leading-relaxed">
                 <li>Designed for passengers without smartphones or bank accounts.</li>
                 <li>By simply scanning their fingerprint, users can:</li>
                 <li>• Check balances</li>
@@ -94,10 +94,10 @@ const Features = () => {
 
             {/* Feature 4 */}
             <div>
-              <h2 className="text-[20px] md:text-[22px] font-sora font-semibold text-black mb-3">
+              <h2 className="text-[20px] md:text-[22px] font-dm font-semibold text-black mb-3">
                 4. Driver & Park Management System
               </h2>
-              <ul className="list-disc list-inside space-y-2 font-sora text-[16px] md:text-[18px] leading-relaxed">
+              <ul className="list-disc list-inside space-y-2 font-lato text-[16px] md:text-[18px] leading-relaxed">
                 <li>Real-time trip and payment tracking.</li>
                 <li>Dynamic park and route fees can be updated anytime by park management.</li>
                 <li>Instant wallet settlements for drivers and park operators.</li>
@@ -107,10 +107,10 @@ const Features = () => {
 
             {/* Feature 5 */}
             <div>
-              <h2 className="text-[20px] md:text-[22px] font-sora font-semibold text-black mb-3">
+              <h2 className="text-[20px] md:text-[22px] font-dm font-semibold text-black mb-3">
                 5. T-Yap Insurance (Transport Cover)
               </h2>
-              <ul className="list-disc list-inside space-y-2 font-sora text-[16px] md:text-[18px] leading-relaxed">
+              <ul className="list-disc list-inside space-y-2 font-lato text-[16px] md:text-[18px] leading-relaxed">
                 <li>Offers instant biometric-based insurance for passengers and drivers.</li>
                 <li>Automatically covers each verified ride, reducing risk and ensuring trust.</li>
                 <li>Transparent claims processed via the T-Yap app and partner insurers.</li>
@@ -119,10 +119,10 @@ const Features = () => {
 
             {/* Feature 6 */}
             <div>
-              <h2 className="text-[20px] md:text-[22px] font-sora font-semibold text-black mb-3">
+              <h2 className="text-[20px] md:text-[22px] font-dm font-semibold text-black mb-3">
                 6. Security & Compliance
               </h2>
-              <ul className="list-disc list-inside space-y-2 font-sora text-[16px] md:text-[18px] leading-relaxed">
+              <ul className="list-disc list-inside space-y-2 font-lato text-[16px] md:text-[18px] leading-relaxed">
                 <li>End-to-end biometric encryption and bank-level data protection.</li>
                 <li>Compliant with NDPR and CBN data/financial standards.</li>
                 <li>Biometric identity verification to eliminate impersonation and fraud.</li>
@@ -132,20 +132,20 @@ const Features = () => {
 
           {/* Mission & Vision */}
           <section className="text-center mt-24 mb-16">
-            <h2 className="font-sora text-[26px] md:text-[32px] font-semibold mb-4">
+            <h2 className="font-dm text-[26px] md:text-[32px] font-semibold mb-4">
               Our Mission
             </h2>
-            <p className="font-sora text-[16px] md:text-[18px] max-w-3xl mx-auto leading-[28px]">
+            <p className="font-lato text-[16px] md:text-[18px] max-w-3xl mx-auto leading-[28px]">
               To revolutionize transportation and digital finance across Africa by merging
               mobility, identity, and fintech into one trusted ecosystem.
             </p>
           </section>
 
           <section className="text-center mb-20">
-            <h2 className="font-sora text-[26px] md:text-[32px] font-semibold mb-4">
+            <h2 className="font-dm text-[26px] md:text-[32px] font-semibold mb-4">
               Our Vision
             </h2>
-            <p className="font-sora text-[16px] md:text-[18px] max-w-3xl mx-auto leading-[28px]">
+            <p className="font-lato text-[16px] md:text-[18px] max-w-3xl mx-auto leading-[28px]">
               A continent where everyone, banked or unbanked, can move, pay, and earn securely
               with just a touch.
             </p>

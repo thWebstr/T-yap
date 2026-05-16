@@ -38,12 +38,12 @@ const OurImpact = () => {
       <div className="absolute w-[600px] h-[600px] rounded-full blur-[300px] bg-[rgba(255,138,0,0.25)] bottom-[-100px] right-[-250px] z-0"></div>
 
       {/* Heading */}
-      <h2 className="font-sora text-[32px] font-semibold text-center text-black mb-6 relative z-10">
+      <h2 className="font-dm text-[32px] font-semibold text-center text-black mb-6 relative z-10">
         Our Impact
       </h2>
 
       {/* Description */}
-      <p className="text-center font-sora text-[20px] text-black max-w-2xl mb-16 leading-relaxed relative z-10">
+      <p className="text-center font-lato text-[20px] text-black max-w-2xl mb-16 leading-relaxed relative z-10">
         Transforming Public Transport for Everyone
         <br />
         <span className="text-[18px] font-normal">
@@ -69,12 +69,12 @@ const OurImpact = () => {
       </div>
 
       {/* Title */}
-      <h3 className="font-sora font-semibold text-[22px] mb-3">
+      <h3 className="font-dm font-semibold text-[22px] mb-3">
         {item.title}
       </h3>
 
       {/* Text */}
-      <p className="font-sora text-[16px] text-gray-700 leading-relaxed">
+      <p className="font-lato text-[16px] text-gray-700 leading-relaxed">
         {item.text}
       </p>
     </div>

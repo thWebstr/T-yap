@@ -37,7 +37,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="w-full py-20 bg-white text-center font-sora">
+    <section className="w-full py-20 bg-white text-center font-lato">
       {/* Header */}
       <h2 className="text-[40px] font-bold leading-[40px] mb-12">FAQs</h2>
 

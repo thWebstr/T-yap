@@ -46,7 +46,7 @@ const AboutUsSnippet = () => {
       <div className="relative z-10 max-w-6xl mx-auto">
         
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-sora font-semibold text-black">
+          <h2 className="text-4xl md:text-5xl font-dm font-semibold text-black">
             About Us
           </h2>
         </div>
@@ -82,7 +82,7 @@ const AboutUsSnippet = () => {
           </div>
 
           <div className="w-full md:w-1/2 text-left">
-            <p className="text-lg md:text-xl text-black font-sora font-medium leading-relaxed mb-8">
+            <p className="text-lg md:text-xl text-black font-lato font-medium leading-relaxed mb-8">
               T-Yap NG is a next generation biometric payment and transport 
               technology company redefining how people move, pay, and earn across
               Africa.

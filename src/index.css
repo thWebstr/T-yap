@@ -1,8 +1,14 @@
 /* ✅ 1. Google Fonts FIRST */
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Lato:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;900&family=Lato:wght@300;400;700;900&display=swap");
 
 /* ✅ 2. Tailwind import SECOND */
 @import "tailwindcss";
+
+@theme {
+  --color-primary: #ff4c00;
+  --font-dm: "DM Sans", sans-serif;
+  --font-lato: "Lato", sans-serif;
+}
 
 /* ✅ 3. Your custom CSS rules come after */
 @media (max-width: 1440px) {
@@ -17,6 +23,7 @@
     transform: translateY(-10px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -26,17 +33,159 @@
 .animate-slideDown {
   animation: slideDown 0.25s ease-out;
 }
-/* Hide scrollbars globally but keep scrolling */
-/* Hide scrollbars globally but allow smooth scrolling */
-html, body {
-  overflow-x: hidden;
-  scrollbar-width: none;
-}
-body::-webkit-scrollbar {
-  display: none;
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
-/* Smooth scrolling */
-html {
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 7s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes biometricPulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+    border-width: 2px;
+    box-shadow: 0 0 0px transparent;
+  }
+  40% {
+    opacity: 0.8;
+    border-width: 6px;
+    box-shadow:
+      0 0 30px color-mix(in srgb, var(--color-primary), transparent 20%),
+      inset 0 0 20px color-mix(in srgb, var(--color-primary), transparent 40%);
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+    border-width: 2px;
+    box-shadow: 0 0 0px transparent;
+  }
+}
+
+.animate-biometric-pulse {
+  animation: biometricPulse 4s cubic-bezier(0.1, 0.5, 0.4, 1) infinite;
+}
+
+.animate-biometric-pulse-delayed {
+  animation: biometricPulse 4s cubic-bezier(0.1, 0.5, 0.4, 1) infinite;
+  animation-delay: 2s;
+}
+
+@keyframes scanLaser {
+  0% {
+    top: 2%;
+    opacity: 1;
+  }
+  100% {
+    top: 98%;
+    opacity: 1;
+  }
+}
+
+.animate-scan-laser {
+  animation: scanLaser 5.5s ease-in-out infinite alternate;
+}
+
+/* ✅ 4. Global Styles & Reset */
+html,
+body {
+  overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
   scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes flipUp {
+  0% {
+    transform: perspective(600px) rotateX(-90deg) translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: perspective(600px) rotateX(0deg) translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes revealUp {
+  0% {
+    transform: translateY(150%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes fadeInScaleLeft {
+  0% {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+}
+
+@keyframes navbarEntrance {
+  0% {
+    top: -100px;
+    opacity: 0;
+  }
+  100% {
+    top: 1.5rem;
+    opacity: 1;
+  }
 }

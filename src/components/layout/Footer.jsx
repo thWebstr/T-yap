@@ -30,7 +30,7 @@ const Footer = () => {
     <footer className="w-full bg-[rgba(56,18,2,1)] text-white px-6 md:px-20 py-16 mt-20">
       {/* Top Row */}
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8">
-        <p className="font-sora font-semibold text-[20px] leading-[30px] max-w-lg mb-4 md:mb-0">
+        <p className="font-lato font-semibold text-[20px] leading-[30px] max-w-lg mb-4 md:mb-0">
           Stay updated on launch dates, product features, and partnership
           opportunities.
         </p>
@@ -48,7 +48,7 @@ const Footer = () => {
           />
           <button
             type="submit"
-            className="bg-[rgba(255,76,0,1)] text-black font-sora font-semibold rounded-full px-6 py-2 hover:bg-orange-500 transition-all"
+            className="bg-[rgba(255,76,0,1)] text-black font-lato font-semibold rounded-full px-6 py-2 hover:bg-orange-500 transition-all"
           >
             Subscribe
           </button>
@@ -67,9 +67,9 @@ const Footer = () => {
         <div className="max-w-sm mb-10 md:mb-0">
           <div className="flex items-center gap-2 mb-2">
             <img src={logo} alt="T-Yap logo" className="w-8 h-8" />
-            <h3 className="text-[28px] font-sora font-semibold">T-Yap</h3>
+            <h3 className="text-[28px] font-dm font-semibold">T-Yap</h3>
           </div>
-          <p className="text-[16px] font-sora leading-[23px]">
+          <p className="text-[16px] font-lato leading-[23px]">
             Nigeria’s first biometric payment system for public transport safe,
             fast, and inclusive.
           </p>
@@ -78,10 +78,10 @@ const Footer = () => {
         {/* Links */}
         <div className="flex flex-wrap gap-16">
           <div>
-            <h4 className="font-sora font-semibold text-[16px] mb-4">
+            <h4 className="font-dm font-semibold text-[16px] mb-4">
               Quick Links
             </h4>
-            <ul className="space-y-2 text-[16px] font-sora">
+            <ul className="space-y-2 text-[16px] font-lato">
               <li>About</li>
               <li>How it Works</li>
               <li>Contact</li>
@@ -90,7 +90,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-sora font-semibold text-[16px] mb-4">Social</h4>
+            <h4 className="font-dm font-semibold text-[16px] mb-4">Social</h4>
             <div className="flex space-x-4 text-[22px]">
               <a
                 href="https://www.instagram.com/t_yap__ng?igsh=c3hla2xsdTN3aGtw"
@@ -115,7 +115,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-sora font-semibold text-[16px] mb-4">Contact</h4>
+            <h4 className="font-dm font-semibold text-[16px] mb-4">Contact</h4>
             <p className="text-[16px] leading-[23px]">
               Address: Lagos, Nigeria
               <br />
@@ -129,7 +129,7 @@ const Footer = () => {
 
       <div className="border-t border-[rgba(255,255,255,0.45)] mt-10 mb-4"></div>
 
-      <p className="text-center text-[16px] font-sora">
+      <p className="text-center text-[16px] font-lato">
         © 2025 <span className="font-semibold">T-yap NG Ltd.</span> All rights
         reserved.
       </p>

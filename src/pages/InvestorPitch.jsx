@@ -29,15 +29,15 @@ const InvestorPitch = () => {
       {/* Main Content */}
       <section className="relative z-10 flex flex-col items-center text-center pt-48 pb-20 px-6 md:px-20">
         {/* Header */}
-        <h1 className="font-sora text-[40px] md:text-[48px] font-bold mb-4">
+        <h1 className="font-dm text-[40px] md:text-[48px] font-bold mb-4">
           Investor Pitch Section
         </h1>
-        <p className="font-sora text-[20px] md:text-[24px] text-gray-700 mb-16">
+        <p className="font-lato text-[20px] md:text-[24px] text-gray-700 mb-16">
           Revolutionizing Transport Payments Across Africa
         </p>
 
         {/* Content */}
-        <div className="w-full max-w-[900px] text-left space-y-12 font-sora">
+        <div className="w-full max-w-[900px] text-left space-y-12 font-lato">
           {/* 1️⃣ Intro */}
           <div>
             <p className="font-semibold text-[20px] mb-3">T-Yap NG</p>

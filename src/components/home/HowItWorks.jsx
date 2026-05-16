@@ -48,7 +48,7 @@ const HowItWorks = () => {
       <div className="absolute w-[700px] h-[700px] bg-[rgba(255,76,0,0.5)] rounded-full blur-[350px] opacity-30 left-[-500px] top-[500px]" />
 
       {/* Heading */}
-      <h2 className="text-[38px] md:text-[46px] font-sora font-semibold text-black text-center mb-20 relative z-10">
+      <h2 className="text-[38px] md:text-[46px] font-dm font-semibold text-black text-center mb-20 relative z-10">
         How It Works
       </h2>
 
