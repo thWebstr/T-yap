@@ -32,6 +32,13 @@ const Hero = () => {
       style={{ backgroundColor: "#0A0A0A" }}
       onMouseMove={handleMouseMove}
     >
+      {/* Background Watermark Text - FUTURE */}
+      <div 
+        className="absolute top-1/3 left-1/2 -translate-x-1/2 font-dm font-black text-[15vw] tracking-[-0.05em] text-white/[0.015] select-none pointer-events-none z-0 whitespace-nowrap uppercase italic"
+        style={{ lineHeight: 1 }}
+      >
+        Future
+      </div>
       {/* --- TEST OPTION 3: Mouse-Tracking Spotlight --- */}
       <div 
         className="pointer-events-none absolute inset-0 z-10 transition-opacity duration-300"

@@ -61,14 +61,9 @@ const WhoWeServe = () => {
   return (
     <section
       id="who-we-serve"
-      className="relative w-full flex flex-col items-center justify-center pt-30 pb-28 px-6 md:px-20 overflow-hidden"
+      className="relative w-full flex flex-col items-center justify-center py-32 pb-28 px-6 md:px-20 overflow-hidden"
       style={{ backgroundColor: "#FAFAFB" }}
     >
-      {/* --- Smooth Transition from Dark Hero --- */}
-      <div 
-        className="absolute top-0 left-0 w-full h-[300px] pointer-events-none z-0"
-        style={{ background: "linear-gradient(to bottom, #0A0A0A 0%, #FAFAFB 100%)" }}
-      />
 
       {/* --- Mesh Gradient Background Depth --- */}
       <div 
@@ -90,10 +85,6 @@ const WhoWeServe = () => {
 
       {/* Header */}
       <div className="relative z-10 flex flex-col items-center mb-24 max-w-4xl">
-        <div className="flex items-center gap-4 mb-4 animate-[fadeSlideUp_0.8s_ease-out_forwards]">
-          <div className="w-12 h-[2px] bg-gradient-to-r from-transparent to-[#FF4C00]/40" />
-          <div className="w-12 h-[2px] bg-gradient-to-l from-transparent to-[#FF4C00]/40" />
-        </div>
         
         <h2
           className="font-dm font-black text-center animate-[fadeSlideUp_0.8s_ease-out_0.2s_forwards] opacity-0"
@@ -108,34 +99,28 @@ const WhoWeServe = () => {
           <span className="relative inline-block px-1">
             <span 
               style={{
-                background: "linear-gradient(135deg, #1A1A1A 0%, #FF4C00 45%, #FF7A00 55%, #1A1A1A 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                filter: "drop-shadow(0 4px 12px rgba(255,76,0,0.15))",
-                paddingRight: "2px"
+                color: "#FF4C00",
+                position: "relative",
+                display: "inline-block"
               }}
             >
               T-Yap
+              <svg
+                className="absolute -bottom-2 md:-bottom-4 left-0 w-full h-[18px] md:h-[26px]"
+                viewBox="0 0 100 20"
+                preserveAspectRatio="none"
+                style={{ overflow: "visible" }}
+              >
+                <path
+                  d="M 2 8 Q 50 26 98 8 Q 50 14 2 8 Z"
+                  fill="#FF4C00"
+                  style={{ filter: "drop-shadow(0 2px 4px rgba(255,76,0,0.3))" }}
+                />
+              </svg>
             </span>
-            {/* Tiny Biometric Accent Dot */}
-            <span className="absolute -top-1 -right-0 w-[6px] h-[6px] rounded-full bg-[#FF4C00] shadow-[0_0_10px_rgba(255,76,0,0.6)] animate-pulse" />
           </span>
           <br />
-          <span style={{ position: "relative", display: "inline-block", color: "#FF4C00" }}>
-            Serves.
-            <svg
-              className="absolute -bottom-2 md:-bottom-4 left-0 w-full h-[18px] md:h-[26px]"
-              viewBox="0 0 100 20"
-              preserveAspectRatio="none"
-              style={{ overflow: "visible" }}
-            >
-              <path
-                d="M 2 8 Q 50 26 98 8 Q 50 14 2 8 Z"
-                fill="#FF4C00"
-                style={{ filter: "drop-shadow(0 2px 4px rgba(255,76,0,0.3))" }}
-              />
-            </svg>
-          </span>
+          Serves.
         </h2>
       </div>
 
