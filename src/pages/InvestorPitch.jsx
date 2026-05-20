@@ -36,7 +36,7 @@ const InvestorPitch = () => {
       </button>
 
       {/* --- Section: Hero Pitch (Dark Theme Peak) --- */}
-      <section className="relative pt-48 pb-32 px-6 md:px-20 bg-[#0A0A0A] overflow-hidden cyber-slant-bottom">
+      <section className="relative pt-48 pb-32 px-6 md:px-20 bg-[#0A0A0A] overflow-hidden">
         {/* Background Watermark */}
         <div className="absolute top-48 left-1/2 -translate-x-1/2 font-black text-[18vw] text-white/[0.02] select-none pointer-events-none z-0 uppercase italic whitespace-nowrap tracking-tighter">
           Equity
@@ -68,6 +68,14 @@ const InvestorPitch = () => {
           </p>
         </div>
       </section>
+
+      {/* Wavy Transition: Dark → Light */}
+      <div className="wave-divider" style={{ marginTop: "-1px", marginBottom: "-1px" }}>
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none" style={{ display: "block", width: "100%", height: "60px" }}>
+          <path d="M0,0 L1440,0 L1440,30 Q1080,80 720,40 Q360,0 0,50 Z" fill="#0A0A0A" />
+          <path d="M0,80 L1440,80 L1440,30 Q1080,80 720,40 Q360,0 0,50 Z" fill="white" />
+        </svg>
+      </div>
 
       {/* --- Main Deck Narrative --- */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 py-32 space-y-56">
@@ -183,7 +191,7 @@ const InvestorPitch = () => {
         </section>
 
         {/* --- 4. Call to Equity --- */}
-        <section className="relative opacity-0 animate-[fadeSlideUp_0.8s_ease-out_forwards] cyber-slant-top">
+        <section className="relative opacity-0 animate-[fadeSlideUp_0.8s_ease-out_forwards]">
            <div className="absolute top-12 left-1/2 -translate-x-1/2 font-black text-[12vw] text-black/[0.015] select-none pointer-events-none z-0 uppercase italic whitespace-nowrap">
             Equity
           </div>
