@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import heroBg from "../../assets/herobg.png";
+import heroBg from "../../assets/herobg_v6.png";
 import Button from "../ui/Button";
 
 const Hero = () => {
