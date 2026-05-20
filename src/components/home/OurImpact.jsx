@@ -115,62 +115,75 @@ const OurImpact = () => {
       </div>
 
       {/* Impact Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1340px] relative z-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-[1340px] relative z-10">
         {impacts.map((item, index) => (
           <div
             key={index}
-            className="group flex flex-col items-center text-center rounded-[32px] p-10 transition-all duration-500 hover:translate-y-[-10px] bg-[#F9F9FB] border border-black/[0.04] opacity-0 animate-[fadeSlideUp_0.8s_ease-out_forwards]"
+            className="group relative flex flex-col items-center text-center rounded-[40px] p-10 transition-all duration-700 hover:translate-y-[-15px] opacity-0 animate-[fadeSlideUp_0.8s_ease-out_forwards] overflow-hidden"
             style={{ 
-              animationDelay: `${0.6 + index * 0.15}s`
+              animationDelay: `${0.6 + index * 0.15}s`,
+              backgroundColor: "rgba(255,255,255,0.7)",
+              backdropFilter: "blur(20px)",
+              border: "1px solid rgba(0,0,0,0.04)",
+              boxShadow: "0 20px 50px rgba(0,0,0,0.03)"
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = "#FFFFFF";
               e.currentTarget.style.borderColor = "rgba(255,76,0,0.15)";
-              e.currentTarget.style.boxShadow = "0 30px 60px rgba(255,76,0,0.08)";
+              e.currentTarget.style.boxShadow = "0 40px 80px rgba(255,76,0,0.08)";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "#F9F9FB";
               e.currentTarget.style.borderColor = "rgba(0,0,0,0.04)";
-              e.currentTarget.style.boxShadow = "none";
+              e.currentTarget.style.boxShadow = "0 20px 50px rgba(0,0,0,0.03)";
             }}
           >
-            {/* Iconic Representation */}
+            {/* Tech-Mesh Subtle Overlay */}
+            <div className="absolute inset-0 opacity-[0.02] pointer-events-none" 
+                 style={{ backgroundImage: "radial-gradient(#000 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
+
+            {/* Iconic Representation - Biometric themed */}
             <div
-              className="flex items-center justify-center w-[88px] h-[88px] rounded-[28px] mb-8 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-[6deg]"
+              className="relative flex items-center justify-center w-[100px] h-[100px] rounded-[32px] mb-10 transition-all duration-500 group-hover:scale-110 group-hover:rotate-[8deg]"
               style={{ backgroundColor: "rgba(255,76,0,0.08)" }}
             >
+              {/* Inner Glow Pulse */}
+              <div className="absolute inset-0 rounded-[32px] border-2 border-[#FF4C00]/10 animate-pulse" />
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-[42px] h-[42px] object-contain"
-                style={{ filter: "invert(40%) sepia(80%) saturate(800%) hue-rotate(340deg) brightness(100%)" }}
+                className="w-[48px] h-[48px] object-contain relative z-10 transition-all duration-500 group-hover:brightness-110"
+                style={{ filter: "invert(35%) sepia(90%) saturate(2000%) hue-rotate(345deg) brightness(95%) contrast(105%) shadow(0 0 10px rgba(255,76,0,0.2))" }}
               />
             </div>
 
-            {/* Title */}
+            {/* Title - Bold & Tracked */}
             <h3
               className="font-dm font-black mb-4"
-              style={{ fontSize: "20px", color: "#1A1A1A", letterSpacing: "-0.01em" }}
+              style={{ fontSize: "24px", color: "#1A1A1A", letterSpacing: "-0.03em" }}
             >
               {item.title}
             </h3>
 
-            {/* Accent Divider */}
+            {/* Premium Reactive Divider */}
             <div
-              className="w-8 h-[3px] bg-gradient-to-r from-[#FF4C00] to-[#FF7A00] mb-6 rounded-full transition-all duration-500 group-hover:w-16"
+              className="w-10 h-[3px] bg-[#FF4C00] mb-8 rounded-full transition-all duration-500 group-hover:w-24 group-hover:shadow-[0_0_15px_rgba(255,76,0,0.4)]"
             />
 
             {/* Description Text */}
             <p
-              className="font-lato"
+              className="font-dm font-medium text-balance"
               style={{
-                fontSize: "15px",
-                color: "rgba(0,0,0,0.6)",
+                fontSize: "16px",
+                color: "rgba(0,0,0,0.5)",
                 lineHeight: "1.7",
               }}
             >
               {item.text}
             </p>
+
+            {/* Subliminal Step Marker */}
+            <div className="absolute top-6 right-8 font-dm font-black text-[11px] text-black/5 tracking-widest uppercase">
+              Impact 0{index + 1}
+            </div>
           </div>
         ))}
       </div>

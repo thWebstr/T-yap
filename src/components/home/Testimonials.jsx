@@ -8,19 +8,16 @@ const testimonials = [
     image: Testimonial1,
     text: "Drivers love the automated settlements and wallet features.",
     name: "Bukumi Somto",
-    role: "Bus Driver, Lagos",
   },
   {
     image: Testimonial2,
     text: "Passengers enjoy the convenience of fingerprint payments.",
     name: "Chiamaka Adeyemi",
-    role: "Daily Commuter",
   },
   {
     image: Testimonial3,
     text: "Park managers now track payments effortlessly in real-time.",
     name: "Ibrahim Musa",
-    role: "Park Manager",
   },
 ];
 
@@ -45,12 +42,12 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="relative w-full flex flex-col items-center py-32 px-6 overflow-hidden"
+      className="relative w-full flex flex-col items-center py-40 px-6 overflow-hidden"
       style={{ backgroundColor: "#0A0A0A" }}
     >
-      {/* Background Watermark */}
+      {/* Background Watermark - TRUST */}
       <div
-        className="absolute top-48 left-1/2 -translate-x-1/2 font-dm font-black text-[12vw] tracking-[-0.05em] text-white/[0.015] select-none pointer-events-none z-0 whitespace-nowrap uppercase italic"
+        className="absolute top-48 left-1/2 -translate-x-1/2 font-dm font-black text-[15vw] tracking-[-0.05em] text-white/[0.015] select-none pointer-events-none z-0 whitespace-nowrap uppercase italic"
         style={{ lineHeight: 1 }}
       >
         Trust
@@ -67,20 +64,6 @@ const Testimonials = () => {
 
       {/* Header */}
       <div className="relative z-10 flex flex-col items-center mb-20 opacity-0 animate-[fadeSlideUp_0.8s_ease-out_0.2s_forwards]">
-        {/* Eyebrow */}
-        <div className="flex items-center gap-2 mb-5">
-          <span
-            className="w-2 h-2 rounded-full"
-            style={{ backgroundColor: "#FF4C00" }}
-          />
-          <span
-            className="font-dm text-xs font-semibold tracking-[0.16em] uppercase"
-            style={{ color: "#FF4C00" }}
-          >
-            What People Say
-          </span>
-        </div>
-
         {/* Headline — matches other sections */}
         <h2
           className="font-dm font-black text-center"
@@ -110,89 +93,112 @@ const Testimonials = () => {
         </h2>
       </div>
 
-      {/* Glass Card */}
+      {/* Pinnacle Glass Manifesto Card */}
       <div
-        className="relative z-10 w-full max-w-2xl mx-auto rounded-[32px] p-10 md:p-14 flex flex-col items-center opacity-0 animate-[fadeSlideUp_0.8s_ease-out_0.4s_forwards]"
+        className="relative z-10 w-full max-w-4xl mx-auto rounded-[48px] p-10 md:p-20 flex flex-col items-center opacity-0 animate-[fadeSlideUp_0.8s_ease-out_0.4s_forwards]"
         style={{
           backgroundColor: "rgba(255,255,255,0.02)",
-          backdropFilter: "blur(20px)",
+          backdropFilter: "blur(40px)",
           border: "1px solid rgba(255,255,255,0.06)",
-          boxShadow: "0 40px 80px rgba(0,0,0,0.3), 0 0 60px rgba(255,76,0,0.03)",
+          boxShadow: "0 60px 120px rgba(0,0,0,0.4), 0 0 80px rgba(255,76,0,0.05)",
         }}
       >
-        {/* Orange corner glow */}
-        <div className="absolute top-0 right-0 w-40 h-40 bg-[#FF4C00]/5 blur-3xl rounded-full pointer-events-none" />
+        {/* Dynamic Inner Glows */}
+        <div className="absolute top-0 right-0 w-64 h-64 bg-[#FF4C00]/5 blur-3xl rounded-full pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#FF4C00]/3 blur-3xl rounded-full pointer-events-none" />
 
+        {/* Testimonial Quote Icon */}
+        <div className="mb-10 text-[#FF4C00]/20">
+          <svg width="60" height="45" viewBox="0 0 60 45" fill="currentColor">
+            <path d="M16.4 0C25.4 0 31.8 6.4 31.8 15.4C31.8 28.6 20.4 45 0 45V38.6C10.4 33.6 14 26.6 14.8 20.2H0V0H16.4ZM44.6 0C53.6 0 60 6.4 60 15.4C60 28.6 48.6 45 28.2 45V38.6C38.6 33.6 42.2 26.6 43 20.2H28.2V0H44.6Z" />
+          </svg>
+        </div>
 
-        {/* Text — crossfade */}
-        <div className="min-h-[120px] flex items-center justify-center mb-8 w-full">
+        {/* Text — Manifesto Style */}
+        <div className="min-h-[160px] md:min-h-[220px] flex items-center justify-center mb-12 w-full">
           <p
-            className="font-dm text-center"
+            className="font-dm text-center font-black"
             style={{
-              fontSize: "clamp(18px, 2.2vw, 24px)",
-              fontWeight: 500,
+              fontSize: "clamp(24px, 4.5vw, 42px)",
               color: "#FFFFFF",
-              lineHeight: 1.6,
+              lineHeight: 1.1,
+              letterSpacing: "-0.04em",
               opacity: visible ? 1 : 0,
-              transition: "opacity 0.5s ease",
+              transform: visible ? "translateY(0)" : "translateY(10px)",
+              transition: "all 0.6s cubic-bezier(0.16, 1, 0.3, 1)",
             }}
           >
-            {testimonials[activeIndex].text}
+            "{testimonials[activeIndex].text}"
           </p>
         </div>
 
-        {/* Gradient divider — matches FeaturesSnippet */}
-        <div className="w-full h-px bg-gradient-to-r from-[#FF4C00]/40 via-[#FF4C00]/10 to-transparent mb-8" />
+        {/* Premium Divider */}
+        <div className="w-32 h-[2px] bg-gradient-to-r from-transparent via-[#FF4C00] to-transparent mb-12" />
 
-        {/* Avatar + name */}
+        {/* Bio + Verified Identity */}
         <div
-          className="flex flex-col items-center gap-3 mb-10"
+          className="flex flex-col items-center gap-4 mb-12"
           style={{
             opacity: visible ? 1 : 0,
-            transition: "opacity 0.5s ease",
+            transition: "opacity 0.6s ease",
           }}
         >
-          <img
-            src={testimonials[activeIndex].image}
-            alt={testimonials[activeIndex].name}
-            className="w-16 h-16 rounded-full object-cover"
-            style={{ border: "2px solid rgba(255,76,0,0.5)" }}
-          />
-          <p
-            className="font-dm font-semibold"
-            style={{ fontSize: "15px", color: "rgba(255,255,255,0.9)" }}
-          >
-            {testimonials[activeIndex].name}
-          </p>
-          <p
-            className="font-dm"
-            style={{ fontSize: "13px", color: "rgba(255,255,255,0.35)", letterSpacing: "0.04em" }}
-          >
-            {testimonials[activeIndex].role}
-          </p>
+          <div className="relative">
+            <img
+              src={testimonials[activeIndex].image}
+              alt={testimonials[activeIndex].name}
+              className="w-20 h-20 rounded-full object-cover transition-transform duration-500 scale-110"
+              style={{ 
+                border: "2px solid #FF4C00",
+                boxShadow: "0 0 20px rgba(255,76,0,0.3)"
+              }}
+            />
+            {/* Verified Badge */}
+            <div className="absolute -bottom-1 -right-1 bg-[#FF4C00] text-white p-1 rounded-full border-2 border-[#0A0A0A] shadow-lg">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+          </div>
+          
+          <div className="text-center">
+            <p
+              className="font-dm font-black text-[18px] text-white tracking-tight"
+            >
+              {testimonials[activeIndex].name}
+            </p>
+            <div className="flex items-center justify-center gap-2 mt-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#FF4C00] animate-pulse" />
+              <p
+                className="font-dm font-bold text-[12px] text-white/40 uppercase tracking-[0.2em]"
+              >
+                Verified Identity
+              </p>
+            </div>
+          </div>
         </div>
 
-        {/* Expanding dot nav */}
-        <div className="flex justify-center gap-2">
+        {/* Signature Pulse Dot Nav */}
+        <div className="flex justify-center gap-4">
           {testimonials.map((_, index) => (
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
               aria-label={`View testimonial ${index + 1}`}
-              className="transition-all duration-300"
-              style={{
-                width: index === activeIndex ? "24px" : "8px",
-                height: "8px",
-                borderRadius: "9999px",
-                backgroundColor:
-                  index === activeIndex
-                    ? "#FF4C00"
-                    : "rgba(255,255,255,0.2)",
-                border: "none",
-                cursor: "pointer",
-                padding: 0,
-              }}
-            />
+              className="relative group h-3 transition-all duration-500"
+              style={{ width: index === activeIndex ? "40px" : "10px" }}
+            >
+              <div 
+                className="absolute inset-0 rounded-full transition-all duration-500"
+                style={{ 
+                  backgroundColor: index === activeIndex ? "#FF4C00" : "rgba(255,255,255,0.1)",
+                  boxShadow: index === activeIndex ? "0 0 15px rgba(255,76,0,0.5)" : "none"
+                }}
+              />
+              {index === activeIndex && (
+                <div className="absolute inset-0 rounded-full border border-[#FF4C00] animate-ping opacity-40" />
+              )}
+            </button>
           ))}
         </div>
       </div>

@@ -94,70 +94,71 @@ const FeaturesSnippet = () => {
       </div>
 
       {/* Feature Cards Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 w-full max-w-[1280px] relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 w-full max-w-[1340px] relative z-10">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="group flex flex-col rounded-[32px] p-8 md:p-10 transition-all duration-500 hover:translate-y-[-8px] opacity-0 animate-[fadeSlideUp_0.8s_ease-out_forwards] overflow-hidden"
+            className="group relative flex flex-col rounded-[48px] p-8 md:p-12 transition-all duration-700 hover:translate-y-[-12px] opacity-0 animate-[fadeSlideUp_0.8s_ease-out_forwards] overflow-hidden"
             style={{
               animationDelay: `${0.3 + index * 0.1}s`,
               backgroundColor: "rgba(255,255,255,0.02)",
-              backdropFilter: "blur(20px)",
+              backdropFilter: "blur(30px)",
               border: "1px solid rgba(255,255,255,0.06)",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "rgba(255,76,0,0.3)";
-              e.currentTarget.style.boxShadow = "0 30px 60px rgba(0,0,0,0.4), 0 0 40px rgba(255,76,0,0.05)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "rgba(255,255,255,0.06)";
-              e.currentTarget.style.boxShadow = "none";
+              boxShadow: "0 40px 80px rgba(0,0,0,0.3)"
             }}
           >
-            {/* Hover Glow Behind Icon */}
-            <div className="absolute top-0 left-0 w-32 h-32 bg-[#FF4C00]/5 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+            {/* --- Tech-Mesh Texture Overlay --- */}
+            <div className="absolute inset-0 opacity-[0.03] pointer-events-none group-hover:opacity-[0.05] transition-opacity duration-700" 
+                 style={{ backgroundImage: "radial-gradient(#fff 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
+            
+            {/* Dynamic Corner Glow */}
+            <div className="absolute -top-24 -right-24 w-48 h-48 bg-[#FF4C00]/10 blur-[60px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
-            {/* Icon Wrapper */}
+            {/* Icon Wrapper with Pulse */}
             <div
-              className="flex items-center justify-center w-[72px] h-[72px] rounded-[24px] mb-8 transition-transform duration-500 group-hover:rotate-[8deg] group-hover:scale-110"
+              className="relative flex items-center justify-center w-[80px] h-[80px] rounded-[28px] mb-10 transition-all duration-500 group-hover:scale-110 group-hover:rotate-[8deg]"
               style={{ 
                 backgroundColor: "rgba(255,76,0,0.12)",
-                boxShadow: "0 10px 20px rgba(255,76,0,0.05)"
+                boxShadow: "0 15px 30px rgba(255,76,0,0.1)"
               }}
             >
-              <span style={{ color: "#FF4C00" }}>{feature.icon}</span>
+              <div className="absolute inset-0 rounded-[28px] border-2 border-[#FF4C00]/20 animate-pulse" />
+              <span style={{ color: "#FF4C00", fontSize: "28px" }}>{feature.icon}</span>
             </div>
 
-            {/* Title */}
+            {/* Title - Bold & Tracked */}
             <h3
               className="font-dm font-black mb-6"
               style={{ 
-                fontSize: "22px", 
+                fontSize: "26px", 
                 color: "#FFFFFF",
-                letterSpacing: "-0.01em",
-                lineHeight: 1.2
+                letterSpacing: "-0.03em",
+                lineHeight: 1.1
               }}
             >
               {feature.title}
             </h3>
 
-            {/* Premium Divider */}
-            <div className="w-full h-px bg-gradient-to-r from-[#FF4C00]/40 via-[#FF4C00]/10 to-transparent mb-8" />
+            {/* Premium Linear Divider */}
+            <div className="w-full h-px bg-gradient-to-r from-[#FF4C00]/60 via-[#FF4C00]/10 to-transparent mb-10" />
 
-            {/* Points */}
-            <ul className="flex flex-col gap-4 flex-1">
+            {/* Points with Modern Bullet Branding */}
+            <ul className="flex flex-col gap-5 flex-1">
               {feature.points.map((point, i) => (
-                <li key={i} className="flex items-start gap-4">
+                <li key={i} className="flex items-start gap-4 group/point">
                   <div
-                    className="mt-[9px] w-[6px] h-[6px] rounded-full flex-shrink-0 shadow-[0_0_8px_rgba(255,76,0,0.5)]"
-                    style={{ backgroundColor: "#FF4C00" }}
+                    className="mt-[11px] w-[6px] h-[6px] rounded-full flex-shrink-0 transition-transform duration-300 group-hover/point:scale-150"
+                    style={{ 
+                      backgroundColor: "#FF4C00",
+                      boxShadow: "0 0 12px rgba(255,76,0,0.6)" 
+                    }}
                   />
                   <span
-                    className="font-dm"
+                    className="font-dm font-medium"
                     style={{
-                      fontSize: "15px",
-                      color: "rgba(255,255,255,0.5)",
-                      lineHeight: "1.7",
+                      fontSize: "16px",
+                      color: "rgba(255,255,255,0.55)",
+                      lineHeight: "1.6",
                     }}
                   >
                     {point}
@@ -165,6 +166,11 @@ const FeaturesSnippet = () => {
                 </li>
               ))}
             </ul>
+
+            {/* Subliminal Brand Mark */}
+            <div className="absolute bottom-6 right-8 opacity-0 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none">
+              <span className="font-dm font-black text-[10px] uppercase tracking-[0.4em] text-white">Security Layer</span>
+            </div>
           </div>
         ))}
       </div>

@@ -189,3 +189,9 @@ body::-webkit-scrollbar {
     opacity: 1;
   }
 }
+
+.content-blur {
+  filter: blur(14px) brightness(0.85) contrast(1.1);
+  pointer-events: none;
+  transform: scale(0.98);
+}
