@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import heroBg from "../../assets/herobg_danfo_v3.png";
 import Button from "../ui/Button";
-<<<<<<< HEAD
-=======
-import heroBg6 from "../../assets/Tyaphero7.png";
->>>>>>> c6de689997e09a8f2c06a79497b761f0b9a246e2
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false);
@@ -30,7 +26,6 @@ const Hero = () => {
   };
 
   return (
-<<<<<<< HEAD
     <section
       id="home"
       className="relative min-h-screen flex items-end justify-center overflow-hidden tech-pattern-lines"
@@ -159,54 +154,10 @@ const Hero = () => {
             onClick={() => scrollToSection("#invest")}
             className="w-full sm:w-auto font-lato text-[18px] md:text-[22px] !font-semibold !py-[12px] md:!py-[13px] !px-[24px] md:!px-[32px] tracking-[0.01em]"
           />
-=======
-    <section id="home" className="relative flex flex-col overflow-hidden">
-      <Navbar />
-
-      <div className="relative w-full">
-        <img
-          src={heroBg6}
-          alt="Hero background"
-          className="w-full block"
-          style={{
-            height: "auto",
-            minHeight: "520px",   
-            maxHeight: "100vh",
-            objectFit: "cover",   
-            objectPosition: "center",
-          }}
-        />
-
-        <div className="absolute inset-0 bg-black/20" />
-
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
-          <h1 className="font-sora font-semibold text-[#fff7f0] text-[7vw] sm:text-[48px] md:text-[82px] leading-tight max-w-[85%]">
-            Tap. Ride. <br /> Pay. Smarter.
-          </h1>
-
-          <p className="mt-2 sm:mt-6 font-sora font-semibold text-[#fff] text-[vw] sm:text-[16px] md:text-[24px] leading-snug max-w-[720px]">
-            Nigeria's first biometric payment system for public transport. Safe,
-            fast, and convenient powered by fintech and insurance features.
-          </p>
-
-          <div className="mt-4 sm:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <Button
-              label="Get Started"
-              variant="primary"
-              onClick={() => scrollToSection("#who-we-serve")}
-            />
-            <Button
-              label="Partner With Us"
-              variant="outline"
-              onClick={() => scrollToSection("#invest")}
-            />
-          </div>
->>>>>>> c6de689997e09a8f2c06a79497b761f0b9a246e2
         </div>
 
       </div>
     </section>
-
   );
 };
 
