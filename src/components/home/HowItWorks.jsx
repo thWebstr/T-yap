@@ -41,7 +41,7 @@ const HowItWorks = () => {
   return (
     <section
       id="how-it-works"
-      className="relative w-full flex flex-col items-center py-32 px-6 md:px-20 overflow-hidden"
+      className="relative w-full flex flex-col items-center py-32 px-6 md:px-20 overflow-hidden tech-pattern-lines"
       style={{ backgroundColor: "#FFFFFF" }}
     >
       {/* Background Mesh Glows */}
@@ -54,9 +54,9 @@ const HowItWorks = () => {
         style={{ background: "radial-gradient(circle, rgba(255,75,0,0.05) 0%, transparent 70%)" }}
       />
 
-      {/* Background Watermark Text */}
+      {/* Background Watermark Text - BOLDER */}
       <div 
-        className="absolute top-48 left-1/2 -translate-x-1/2 font-dm font-black text-[12vw] tracking-[-0.05em] text-[#0A0A0A]/[0.02] select-none pointer-events-none z-0 whitespace-nowrap uppercase italic"
+        className="absolute top-48 left-1/2 -translate-x-1/2 font-dm font-black text-[12vw] tracking-[-0.05em] text-[#0A0A0A]/[0.05] select-none pointer-events-none z-0 whitespace-nowrap uppercase italic"
         style={{ lineHeight: 1 }}
       >
         Journey

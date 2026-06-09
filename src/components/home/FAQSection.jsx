@@ -39,12 +39,12 @@ const FAQSection = () => {
   return (
     <section
       id="faq"
-      className="relative w-full py-32 px-6 md:px-20 overflow-hidden"
+      className="relative w-full py-32 px-6 md:px-20 overflow-hidden tech-pattern-lines"
       style={{ backgroundColor: "#FFFFFF" }}
     >
-      {/* Background Watermark */}
+      {/* Background Watermark - BOLDER */}
       <div 
-        className="absolute top-48 left-1/2 -translate-x-1/2 font-dm font-black text-[12vw] tracking-[-0.05em] text-black/[0.02] select-none pointer-events-none z-0 whitespace-nowrap uppercase italic"
+        className="absolute top-48 left-1/2 -translate-x-1/2 font-dm font-black text-[12vw] tracking-[-0.05em] text-black/[0.05] select-none pointer-events-none z-0 whitespace-nowrap uppercase italic"
         style={{ lineHeight: 1 }}
       >
         Support

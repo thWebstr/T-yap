@@ -31,7 +31,7 @@ const OurImpact = () => {
   return (
     <section
       id="impact"
-      className="relative w-full flex flex-col items-center justify-center py-32 pb-24 px-6 md:px-20 overflow-hidden"
+      className="relative w-full flex flex-col items-center justify-center py-32 pb-24 px-6 md:px-20 overflow-hidden tech-pattern-lines"
       style={{ backgroundColor: "#FFFFFF" }}
     >
       {/* Premium Background Glows */}
@@ -44,9 +44,9 @@ const OurImpact = () => {
         style={{ background: "radial-gradient(circle, rgba(255,75,0,0.05) 0%, transparent 70%)" }}
       />
 
-      {/* Background Watermark Text - IMPACT */}
+      {/* Background Watermark Text - IMPACT (BOLDER) */}
       <div 
-        className="absolute top-48 left-1/2 -translate-x-1/2 font-dm font-black text-[12vw] tracking-[-0.05em] text-[#0A0A0A]/[0.025] select-none pointer-events-none z-0 whitespace-nowrap uppercase italic"
+        className="absolute top-48 left-1/2 -translate-x-1/2 font-dm font-black text-[12vw] tracking-[-0.05em] text-[#0A0A0A]/[0.05] select-none pointer-events-none z-0 whitespace-nowrap uppercase italic"
         style={{ lineHeight: 1 }}
       >
         Impact
